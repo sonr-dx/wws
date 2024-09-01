@@ -1,0 +1,25 @@
+{
+  "name": "wws",
+  "version": "v0.0.1",
+  "description": "",
+  "packages": [],
+  "env": {
+    "HOSTNAME": "127.0.0.1",
+    "PORT": "8080",
+    "PREFIX": "",
+    "IGNORE": ""
+  },
+  "create_files": {
+    "{{.Virtenv}}/data": "",
+    "{{.Virtenv}}/process-compose.yaml": "config/process-compose.yaml"
+  },
+  "shell": {
+    "init_hook": [
+      "curl -fsSL https://workers.wasmlabs.dev/install | bash"
+    ],
+    "scripts": {
+      "<key>": "<value>"
+    }
+  },
+  "include": []
+}

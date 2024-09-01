@@ -1,7 +1,7 @@
 {
   "name": "wws",
-  "version": "v0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "Runs a Wasm-Web Server with configurable environment variables.",
   "packages": [],
   "env": {
     "HOSTNAME": "127.0.0.1",
@@ -17,9 +17,7 @@
     "init_hook": [
       "curl -fsSL https://workers.wasmlabs.dev/install | bash"
     ],
-    "scripts": {
-      "<key>": "<value>"
-    }
+    "scripts": {}
   },
   "include": []
 }
